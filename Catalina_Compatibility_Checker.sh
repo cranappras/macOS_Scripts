@@ -55,7 +55,7 @@ OSVERSIONMAJOR=$(sw_vers -productVersion | awk -F"." '{ print $2 }')
 OSVERSIONMINOR=$(sw_vers -productVersion | awk -F"." '{ print $3 }')
 
 # Checks if computer meets pre-requisites for Catalina
-if [[ "$OSVERSIONMAJOR" -ge 9 && "$OSVERSIONMAJOR" -le 15 || "$OSVERSIONMAJOR" -eq 8 && "OSVERSIONMINOR" -eq 0 ]]; then
+if [[ "$OSVERSIONMAJOR" -ge 9 && "$OSVERSIONMAJOR" -le 15 || "$OSVERSIONMAJOR" -eq 9 && "OSVERSIONMINOR" -eq 0 ]]; then
 
 	# Transform GB into Bytes
 	GIGABYTES=$((1024 * 1024 * 1024))
